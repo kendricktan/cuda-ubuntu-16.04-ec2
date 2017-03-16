@@ -2,10 +2,9 @@
 
 # Install dependencies and change shell to zsh
 sudo apt-get update
-sudo apt-get install build-essential zsh
+sudo apt-get install build-essential
 sudo apt-get install linux-image-extra-`uname -r`
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-sudo chsh -s /usr/bin/zsh ubuntu
+sudo apt-get install nvidia-cuda-toolkit
 
 # Download driver which is currently supported by amazon
 if [[ ! -e "nvidia_driver.run" ]];
