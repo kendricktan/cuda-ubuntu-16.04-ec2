@@ -39,6 +39,7 @@ echo "Installing CUDNN"
 tar xf cudnn-8.0.tgz
 sudo cp cuda/lib64/* /usr/local/cuda/lib64/
 sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
+echo -e "export CUDA_HOME=/usr/local/cuda\nexport PATH=\$PATH:\$CUDA_HOME/bin\nexport LD_LIBRARY_PATH=\$LD_LINKER_PATH:\$CUDA_HOME/lib64" | tee -a ~/.bashrc ~/.zshrc
 
 # Cleanup
 echo "Cleaning up..."
