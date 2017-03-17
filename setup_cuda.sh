@@ -4,7 +4,6 @@
 sudo apt-get update
 sudo apt-get install build-essential
 sudo apt-get install linux-image-extra-`uname -r`
-sudo apt-get install nvidia-cuda-toolkit
 
 # Download driver which is currently supported by amazon
 if [[ ! -e "nvidia_driver.run" ]];
@@ -43,3 +42,6 @@ echo -e "export CUDA_HOME=/usr/local/cuda\nexport PATH=\$PATH:\$CUDA_HOME/bin\ne
 # Cleanup
 echo "Cleaning up..."
 sudo rm -rf cuda cuda_8.0.run extracts nvidia_driver.run
+
+# Installing toolkit
+sudo apt-get install nvidia-cuda-toolkit
