@@ -42,6 +42,3 @@ echo -e "export CUDA_HOME=/usr/local/cuda\nexport PATH=\$PATH:\$CUDA_HOME/bin\ne
 # Cleanup
 echo "Cleaning up..."
 sudo rm -rf cuda cuda_8.0.run extracts nvidia_driver.run
-
-# Installing toolkit
-sudo apt-get install nvidia-cuda-toolkit
