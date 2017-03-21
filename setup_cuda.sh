@@ -8,9 +8,9 @@ sudo apt-get install linux-image-extra-`uname -r`
 # Download driver which is currently supported by amazon
 if [[ ! -e "nvidia_driver.run" ]];
 then
-	echo "Downloading NVIDIA 367.27 driver"
-	wget http://us.download.nvidia.com/XFree86/Linux-x86_64/367.27/NVIDIA-Linux-x86_64-367.27.run -O nvidia_driver.run
-	echo "Installing NVIDIA 367.27 driver"
+	echo "Downloading NVIDIA 367.57 driver"
+	wget http://us.download.nvidia.com/XFree86/Linux-x86_64/367.57/NVIDIA-Linux-x86_64-367.57.run -O nvidia_driver.run
+	echo "Installing NVIDIA 367.57 driver"
 	sudo chmod +x nvidia_driver.run
 	sudo sh nvidia_driver.run
 else
